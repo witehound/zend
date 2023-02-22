@@ -31,6 +31,6 @@ const Home = () => {
   );
 };
 
-//writing research
+//more research on dynamic vamm
 
 export default Home;
