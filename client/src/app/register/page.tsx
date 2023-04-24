@@ -24,7 +24,7 @@ export default function Login() {
 
               <InputField
                 type="text"
-                name="lastName"
+                name="LastName"
                 placeholder="Last name"
                 required={true}
                 maxLength={32}
