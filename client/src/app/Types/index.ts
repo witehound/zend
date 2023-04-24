@@ -1,4 +1,3 @@
-import {  ReactNode } from "react"
 import { UseFormRegister} from "react-hook-form"
 
 export interface IInputesField {
@@ -6,8 +5,9 @@ export interface IInputesField {
     name: string,
     placeholder: string,
     required?: string | boolean,
-    maxLength: number 
- 
+    maxLength: number,
+    register : UseFormRegister<any>
+    
 }
 
 export interface IButton {
@@ -18,8 +18,6 @@ export interface IButton {
 
 export interface IForm {
     style: string,
-    children: ReactNode,
-    formType? : RegisterFormFeilds | LoginFormFeilds
 }
 
 export type RegisterFormFeilds = {
