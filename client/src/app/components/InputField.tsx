@@ -29,6 +29,10 @@ export default function InputField({
             value: maxLength,
             message: `${maxLength} characters max`,
           },
+          minLength: {
+            value: 4,
+            message: `4 characters min`,
+          },
         })}
         className="bg-inherit text-white outline-none flex items-center h-7 p-1 w-full "
       />
