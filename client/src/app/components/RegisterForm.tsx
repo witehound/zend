@@ -12,7 +12,6 @@ export default function RegisterForm({ style }: IForm) {
 
   const onSubmit = (data: RegisterFormFeilds) => {
     console.log("data", data);
-    console.log("errors", errors);
   };
   return (
     <main className=" flex items-center justify-center w-full h-screen">
@@ -44,7 +43,7 @@ export default function RegisterForm({ style }: IForm) {
           register={register}
         />
         <InputField
-          type="text"
+          type="password"
           name="password"
           placeholder="Password"
           required={true}
