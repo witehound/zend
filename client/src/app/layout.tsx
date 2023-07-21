@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} w-full flex`}>
         <Navigation />
-        <main className=" flex-[10]">{children}</main>
+        <main className=" flex-1">{children}</main>
       </body>
     </html>
   );
