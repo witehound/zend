@@ -13,7 +13,7 @@ export default function Login() {
         <InputField type="text" name="password" placeholder="Password" />
         <Button
           type="submit"
-          style="bg-[#272727] flex items-center justify-center h-10 rounded-[5px]"
+          style="bg-[#636262] flex items-center justify-center h-10 rounded-[5px] hover:bg-[#7B7B7B]"
           text="Login"
         />
       </form>

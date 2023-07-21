@@ -3,7 +3,7 @@ import { IButton } from "../Interface";
 
 export default function Button({ type, style, text }: IButton) {
   return (
-    <button type={type} className={style}>
+    <button type={type} className={`${style} font-semibold`}>
       {text}
     </button>
   );
