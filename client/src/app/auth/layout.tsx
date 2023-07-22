@@ -1,12 +1,11 @@
-import "./globals.css";
+import "../globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import { Navigation } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Zend | Home",
+  title: "Zend | auth",
   description: "How paymnets should be made",
 };
 
@@ -17,10 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} w-full flex`}>
-        <Navigation />
-        <main className=" flex-1">{children}</main>
-      </body>
+      <body className={`${inter.className}`}>{children}</body>
     </html>
   );
 }
