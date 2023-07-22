@@ -1,3 +1,10 @@
+import { Navigation } from "./components";
+
 export default function Home() {
-  return <main className="">Hello world</main>;
+  return (
+    <main className=" flex">
+      <Navigation />
+      <section className="p-5 flex-1">HelloWorld</section>
+    </main>
+  );
 }
