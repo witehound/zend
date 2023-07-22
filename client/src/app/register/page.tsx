@@ -1,3 +1,9 @@
+import type { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Zend | Register",
+  description: "How paymnets should be made",
+};
+
 export default function Login() {
   return (
     <main className=" flex items-center justify-center w-full h-screen">
