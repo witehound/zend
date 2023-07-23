@@ -4,11 +4,13 @@ import FolderZipIcon from "@mui/icons-material/FolderZip";
 import SettingsIcon from "@mui/icons-material/Settings";
 export default function Navigation() {
   return (
-    <main className=" w-[156px] flex items-center flex-col p-5 gap-5">
-      <HomeIcon />
-      <AnalyticsIcon />
-      <FolderZipIcon />
-      <SettingsIcon />
-    </main>
+    <div className="h-screen border-r border-gray-600">
+      <main className=" w-[126px] flex items-center flex-col pt-5 gap-10">
+        <HomeIcon />
+        <AnalyticsIcon />
+        <FolderZipIcon />
+        <SettingsIcon />
+      </main>
+    </div>
   );
 }

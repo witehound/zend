@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} w-full flex`}>
-        <main className=" flex-1 p-5">{children}</main>
+        <main className=" flex-1">{children}</main>
       </body>
     </html>
   );
