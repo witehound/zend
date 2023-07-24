@@ -7,11 +7,19 @@ export default function InputField({
   style,
 }: IInputesField) {
   return (
-    <input
-      type={type}
-      name={name}
-      placeholder={placeholder}
-      className={style}
-    />
+    <div>
+      <div>
+        <div>
+          <label htmlFor={name}>placeholder</label>
+        </div>
+        <div>Error</div>
+      </div>
+      <input
+        type={type}
+        name={name}
+        placeholder={placeholder}
+        className={style}
+      />
+    </div>
   );
 }
