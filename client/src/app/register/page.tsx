@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { InputField } from "../components";
 export const metadata: Metadata = {
   title: "Zend | Register",
   description: "How paymnets should be made",
@@ -9,30 +10,31 @@ export default function Login() {
     <main className=" flex items-center justify-center w-full h-screen">
       <form className="flex flex-col gap-5 w-[500px]">
         <div className="flex flrx-row gap-5">
-          <input
+          <InputField
             type="text"
             name="firstName"
             placeholder="First name"
-            className="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1 flex-1"
+            style="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1 flex-1"
           />
-          <input
+
+          <InputField
             type="text"
             name="LastName"
             placeholder="Last name"
-            className="bg-[#1A1A1A] text-white outline-none flex items-center h-12  p-1 flex-1"
+            style="bg-[#1A1A1A] text-white outline-none flex items-center h-12  p-1 flex-1"
           />
         </div>
-        <input
+        <InputField
           type="text"
           name="userName"
           placeholder="username"
-          className="bg-[#1A1A1A] text-white outline-none flex items-center h-12  p-1 w-full"
+          style="bg-[#1A1A1A] text-white outline-none flex items-center h-12  p-1 w-full"
         />
-        <input
+        <InputField
           type="text"
           name="userName"
           placeholder="username"
-          className="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1"
+          style="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1"
         />
         <button
           type="submit"
