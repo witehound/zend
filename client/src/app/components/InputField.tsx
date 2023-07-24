@@ -2,7 +2,7 @@ import { IInputesField } from "../Interface";
 
 export default function InputField({ type, name, placeholder }: IInputesField) {
   return (
-    <div>
+    <div className="bg-[#1A1A1A] p-1">
       <div className="flex justify-between">
         <div>
           <label htmlFor={name}>{placeholder}</label>
@@ -12,8 +12,7 @@ export default function InputField({ type, name, placeholder }: IInputesField) {
       <input
         type={type}
         name={name}
-        placeholder={placeholder}
-        className="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1 w-full rounded-[5px]"
+        className="bg-inherit text-white outline-none flex items-center h-7 p-1 w-full rounded-[5px]"
       />
     </div>
   );

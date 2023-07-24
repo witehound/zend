@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 export default function Login() {
   return (
     <main className=" flex items-center justify-center w-full h-screen">
-      <form className="flex flex-col gap-5  w-[500px]">
+      <form className="flex flex-col gap-5  w-[400px]">
         <InputField type="text" name="userName" placeholder="Username" />
         <InputField type="text" name="password" placeholder="Password" />
         <button
