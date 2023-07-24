@@ -5,9 +5,11 @@ export default function InputField({ type, name, placeholder }: IInputesField) {
     <div className="bg-[#1A1A1A] p-1">
       <div className="flex justify-between">
         <div>
-          <label htmlFor={name}>{placeholder}</label>
+          <label htmlFor={name} className=" text-gray-500 text-[12px]">
+            {placeholder}
+          </label>
         </div>
-        <div className=" text-red-700">Error</div>
+        <div className=" text-red-700 text-[12px]">Error</div>
       </div>
       <input
         type={type}
