@@ -2,7 +2,7 @@ import { Navigation, QuickActions } from "./components";
 
 export default function Home() {
   return (
-    <main className="flex relative">
+    <main className="flex">
       <Navigation />
       <section className="p-5 flex-1 gap-5 flex flex-col ">
         <h2>Welcome, user !</h2>

@@ -4,7 +4,7 @@ import FolderZipIcon from "@mui/icons-material/FolderZip";
 import SettingsIcon from "@mui/icons-material/Settings";
 export default function Navigation() {
   return (
-    <div className="h-screen border-r border-gray-600 top-0 sticky left-0 bottom-0">
+    <div className="h-screen border-r border-gray-600 top-0 sticky left-0">
       <main className=" w-[126px] flex items-center flex-col pt-5 gap-5">
         <div className="p-2 rounded-full cursor-pointer hover:bg-[#181818]">
           <HomeIcon />
