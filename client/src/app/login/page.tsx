@@ -9,18 +9,8 @@ export default function Login() {
   return (
     <main className=" flex items-center justify-center w-full h-screen">
       <form className="flex flex-col gap-5  w-[500px]">
-        <InputField
-          type="text"
-          name="userName"
-          placeholder="username"
-          style="bg-[#1A1A1A] text-white outline-none flex items-center h-12  p-1"
-        />
-        <InputField
-          type="text"
-          name="userName"
-          placeholder="username"
-          style="bg-[#1A1A1A] text-white outline-none flex items-center h-12 p-1"
-        />
+        <InputField type="text" name="userName" placeholder="Username" />
+        <InputField type="text" name="password" placeholder="Password" />
         <button
           type="submit"
           className="bg-[#272727] flex items-center justify-center h-10"
