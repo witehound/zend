@@ -1,11 +1,11 @@
 import Navigation from "./Navigation";
 import QuickActions from "./QuickActions"
 import QuickAction from "./QuickAction"
-import Inputs from "./Inputs";
+import InputField from "./InputField";
 
 export {
     Navigation,
     QuickActions,
     QuickAction,
-    Inputs
+    InputField
 }
