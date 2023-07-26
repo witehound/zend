@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Button, InputField } from "../components";
+import { Button, InputField, Form } from "../components";
 export const metadata: Metadata = {
   title: "Zend | Login",
   description: "How paymnets should be made",
@@ -8,15 +8,33 @@ export const metadata: Metadata = {
 export default function Login() {
   return (
     <main className=" flex items-center justify-center w-full h-screen">
-      <form className="flex flex-col gap-5  w-[400px]">
-        <InputField type="text" name="userName" placeholder="Username" />
-        <InputField type="text" name="password" placeholder="Password" />
-        <Button
-          type="submit"
-          style="bg-[#636262] flex items-center justify-center h-10 rounded-[5px] hover:bg-[#7B7B7B]"
-          text="Login"
-        />
-      </form>
+      <Form
+        style="flex flex-col gap-5  w-[400px]"
+        children={
+          <>
+            <InputField
+              type="text"
+              name="userName"
+              placeholder="Username"
+              required={true}
+              maxLength={32}
+            />
+            <InputField
+              type="text"
+              name="password"
+              placeholder="Password"
+              required={true}
+              maxLength={32}
+            />
+            <Button
+              type="submit"
+              style="bg-[#636262] flex items-center justify-center h-10 rounded-[5px] hover:bg-[#7B7B7B]"
+              text="Login"
+            />
+          </>
+        }
+      />
+      <form className=""></form>
     </main>
   );
 }

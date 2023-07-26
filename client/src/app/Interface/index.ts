@@ -1,3 +1,5 @@
+import {  ReactNode } from "react"
+
 export interface IInputesField {
     type: string,
     name: string,
@@ -10,4 +12,9 @@ export interface IButton {
     type: "button" | "submit" | "reset" ,
     style: string,
     text : string
+}
+
+export interface IForm {
+    style: string,
+    children : ReactNode
 }

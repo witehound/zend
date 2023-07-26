@@ -11,7 +11,6 @@ export default function InputField({
 }: IInputesField) {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm();
   return (
