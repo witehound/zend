@@ -18,3 +18,15 @@ export interface IForm {
     style: string,
     children : ReactNode
 }
+
+export type RegisterFormFeilds = {
+    firstName : string,
+    lastName: string,
+    userName: string,
+    password : string
+}
+
+export type LoginFormFeilds = {
+    userName: string,
+    password : string
+}
