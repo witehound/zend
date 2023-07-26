@@ -1,5 +1,5 @@
 import { ButtonHTMLAttributes, FC } from "react";
-import { IButton } from "../Interface";
+import { IButton } from "../Types";
 
 export default function Button({ type, style, text }: IButton) {
   return (

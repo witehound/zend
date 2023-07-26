@@ -1,5 +1,5 @@
 "use client";
-import { IInputesField } from "../Interface";
+import { IInputesField } from "../Types";
 import { useForm } from "react-hook-form";
 
 export default function InputField({
