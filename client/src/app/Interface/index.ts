@@ -2,6 +2,8 @@ export interface IInputesField {
     type: string,
     name: string,
     placeholder: string,
+    required?: string | boolean,
+    maxLength : number 
 }
 
 export interface IButton {
